@@ -1,0 +1,163 @@
+.carrossel__titulo {
+         background: var(--branco);
+          color: var(--laranja);
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 18px;
+          font-weight: 700;
+          padding: 1em 0 0.5em 0;
+}
+
+.swiper-pagination {
+          position: initial;
+          margin: 0.5em 0;
+}
+
+.swiper-slide img {
+          width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+          display:none
+}
+
+.card {
+          background: var(--branco);
+          margin: 1em; 
+          box-shadow: 0px 4px 4px  rgba(0,0, 0, 0.25);
+          border-radius: 10px;
+}
+
+.card__descrição {
+          display:flex;
+          justify-content: space-between;
+          padding: 1em 0.5em 1em 0.5em;
+}
+
+.descrição__título{
+          color: var(--laranja);
+          line-height: 24px;
+          font-weight: 700;
+}
+
+.descrição__titulo-livro{
+          color: var(--azul-escuro);
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 27px;
+          margin: 0.6em 0;
+}
+
+.descrição__texto{
+          font-size: 14px;
+          line-height: 21px;
+          padding-right: 0.5em;
+}
+
+.card__botões, .botões {
+          display:flex;
+          justify-content: space-between;
+}
+
+.botões {
+          margin-left: 1em;
+}
+
+.botões__ancora{
+          text-decoration: none;
+          color: var(--branco);
+          font-weight: 700;
+          border: 1px solid var(--laranja);
+          background: var(--laranja);
+          padding: 1em 2.2em;
+          margin: 0 0.5em 1em 0;
+}
+
+.card__autor-do-mês{
+          display: flex;
+          justify-content: space-between;
+          padding: 1em 0.5em 1em 0.5em;
+}
+
+.autor__classificação {
+          padding-bottom: 1em;
+}
+
+.autor__título {
+          color: var(--laranja);
+          font-weight: 700;          
+}
+
+.autor__nome {
+          color: var(--azul-escuro);
+          font-weight: 700;
+          font-size: 18px;
+          margin: 0.8em 0;
+}
+
+.autor__descrição {
+          font-size: 14px;
+          line-height: 21px;
+}
+
+@media screen and (min-width: 1024px) {
+          .carrossel__titulo {
+                    font-size: 26px;
+          }
+
+          .swiper {
+                    width: 60%; 
+          }
+
+          .swiper-pagination {
+                    margin: 1.5em 0 3em 0; 
+          }
+
+          .swiper-button-next,
+          .swiper-button-prev {
+                    display: block;
+                    top: 60%;
+          }          
+
+          .card{
+                    width: 40%;
+                    margin: 2em auto;
+          }
+}
+
+@media screen and (min-width: 1728px) {
+         .swiper{
+                    width: 50%;
+         }
+
+          .swiper-slide {
+                    display: block;
+          }    
+
+          .carrossel__container{
+                    display:flex;
+                    margin: 0 20vw 3em 20vw;
+                    align-items: center;                    
+          }
+
+          .swiper-pagination {
+                    margin: 1em 0; 
+          }
+
+          .card {
+                    width: 60%;
+                    margin-left: 3em;
+          }
+
+          .descrição__título,
+          .autor__título {
+                    font-size: 32px;
+                    line-height: 48px;        
+          }
+
+          .descrição__texto,
+          .autor__descrição{
+                    font-size: 16px;
+                    line-height: 24px;
+          }
+}
